@@ -1,6 +1,5 @@
 name: Unzip and commit
 
-# Trigger on any push to the default branch
 on:
   push:
     branches:
@@ -16,16 +15,17 @@ jobs:
           fetch-depth: 0
       - name: Install unzip
         run: sudo apt-get update && sudo apt-get install -y unzip
-      - name: Unzip and rearrange
-        if: ${{ hashFiles('life-insurance-product-tool.zip') != '' }}
+      - name: Extract zip and tidy
         run: |
-          unzip -o life-insurance-product-tool.zip
-          rm life-insurance-product-tool.zip
-          shopt -s dotglob
-    #       || true mv life-insurance-product-tool/* .
-    #  || true      rm -rf life-insurance-p
-            mv life-insurance-product-tool/* . || true
-        rm -rf life-insurance-product-tool || trueroduct-tool
+          if ls *.zip; then
+            unzip -o *.zip
+            rm -f *.zip
+          fi
+          if [ -d "life-insurance-product-tool" ]; then
+            shopt -s dotglob
+            mv life-insurance-product-tool/* .
+            rm -rf life-insurance-product-tool
+          fi
       - name: Commit and push
         run: |
           git config --global user.name "github-actions[bot]"
