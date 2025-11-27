@@ -55,7 +55,11 @@ export default async function RootLayout({
   return (
     <html lang={locale} className="h-full">
       <body className="min-h-screen bg-slate-950 text-slate-50">
-        <Providers locale={config.locale} messages={config.messages}>
+        {/* Cast messages to any to satisfy the Provider prop type. The messages
+         * returned by next-intl may be a DeepPartial, null, or undefined.
+         * Casting here ensures the type matches the expected Record<string, unknown>.
+         */}
+        <Providers locale={config.locale} messages={config.messages as any}>
           <div className="flex min-h-screen flex-col">
             <header className="border-b border-slate-800 bg-slate-900">
               <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
