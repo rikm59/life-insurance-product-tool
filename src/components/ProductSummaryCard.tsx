@@ -15,7 +15,7 @@ interface Props {
  */
 export function ProductSummaryCard({session, productConfig, step}: Props) {
   return (
-    <div className="space-y-1 rounded-lg border border-slate-700 bg-slate-900/90 p-2">
+    <div className="space-y-1 rounded-lg border border-slate-700 bg-slate-900/90 p-2 shadow-card">
       <h2 className="text-[13px] font-semibold">Session</h2>
       <p className="text-[11px] text-slate-300">
         Language: {session.language.toUpperCase()} · Mode: {session.mode}

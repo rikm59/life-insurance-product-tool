@@ -3,7 +3,10 @@
 @tailwind utilities;
 
 body {
-  @apply bg-slate-950 text-slate-50;
+  @apply bg-slate-950 text-slate-50 font-body;
+  /* Smooth font rendering for a modern look */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* High contrast mode styles are toggled via a class on the html element */

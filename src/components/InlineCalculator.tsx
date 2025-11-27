@@ -28,7 +28,7 @@ export function InlineCalculator() {
   const loanExample = loanStressTest(100000, 0.05, 0.04, 20);
 
   return (
-    <div className="rounded-lg border border-slate-700 bg-slate-900/90 p-2 text-[11px]">
+    <div className="rounded-lg border border-slate-700 bg-slate-900/90 p-3 text-[11px] shadow-card">
       <h3 className="text-[12px] font-semibold">Inline calculators</h3>
       <form className="mt-1 space-y-1" onSubmit={handleGuideline}>
         <div className="flex gap-1">

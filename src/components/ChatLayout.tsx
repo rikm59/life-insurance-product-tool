@@ -18,11 +18,13 @@ export function ChatLayout() {
     <div className="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-6 md:flex-row">
       <section
         aria-label="Conversational builder"
-        className="flex flex-1 flex-col rounded-xl border border-slate-800 bg-slate-900/70"
+        className="flex flex-1 flex-col rounded-xl border border-slate-800 bg-slate-900/70 shadow-card"
       >
-        <div className="border-b border-slate-800 p-3">
-          <h1 className="text-base font-semibold">Life Insurance Product Tool Builder</h1>
-          <p className="mt-1 text-xs text-slate-400">
+        <div className="border-b border-slate-800 p-4">
+          <h1 className="text-lg font-semibold font-heading text-brand-primary">
+            Life Insurance Product Tool Builder
+          </h1>
+          <p className="mt-1 text-sm text-slate-400">
             Conversation always starts with language, then product type, then guided prompts.
           </p>
           <ProgressBar step={step} />
@@ -36,7 +38,7 @@ export function ChatLayout() {
       </section>
       <aside
         aria-label="Live summary"
-        className="mt-4 w-full rounded-xl border border-slate-800 bg-slate-900/90 p-3 md:mt-0 md:w-80"
+        className="mt-4 w-full rounded-xl border border-slate-800 bg-slate-900/90 p-3 shadow-card md:mt-0 md:w-80"
       >
         <SummaryPanel />
       </aside>

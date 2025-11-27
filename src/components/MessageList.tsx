@@ -24,11 +24,11 @@ export function MessageList() {
           className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}
         >
           <div
-            className={`max-w-[80%] rounded-lg px-3 py-2 text-xs ${
+            className={`max-w-[80%] rounded-lg px-3 py-2 text-xs shadow-card ${
               msg.role === 'user'
                 ? 'bg-brand-primary text-slate-50'
                 : 'bg-slate-800 text-slate-100'
-            }`}
+            } animate-bubble-pop`}
           >
             <p>{msg.content}</p>
             {msg.meta?.step && (
