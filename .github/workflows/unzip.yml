@@ -22,8 +22,10 @@ jobs:
           unzip -o life-insurance-product-tool.zip
           rm life-insurance-product-tool.zip
           shopt -s dotglob
-          mv life-insurance-product-tool/* .
-          rm -rf life-insurance-product-tool
+    #       || true mv life-insurance-product-tool/* .
+    #  || true      rm -rf life-insurance-p
+            mv life-insurance-product-tool/* . || true
+        rm -rf life-insurance-product-tool || trueroduct-tool
       - name: Commit and push
         run: |
           git config --global user.name "github-actions[bot]"
