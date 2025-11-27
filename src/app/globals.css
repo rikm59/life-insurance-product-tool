@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-slate-950 text-slate-50;
+}
+
+/* High contrast mode styles are toggled via a class on the html element */
+.high-contrast body {
+  @apply bg-black text-white;
+}
+
+.focus-outline:focus-visible {
+  outline: 2px solid #22c55e;
+  outline-offset: 2px;
+}

@@ -1,0 +1,30 @@
+{
+  "Home": {
+    "title": "Constructor de Herramientas de Seguros de Vida",
+    "subtitle": "Diseña, compara y audita herramientas de productos de vida.",
+    "cta": "Iniciar el Constructor"
+  },
+  "Nav": {
+    "home": "Inicio",
+    "builder": "Constructor",
+    "compare": "Comparar",
+    "audit": "Auditoría",
+    "docs": "Ayuda",
+    "settings": "Configuración"
+  },
+  "Builder": {
+    "headline": "Constructor Conversacional de Productos",
+    "startLanguage": "Empezamos con el idioma.",
+    "languagePrompt": "Elige el idioma para trabajar.",
+    "productPrompt": "Ahora elige el tipo de seguro.",
+    "inputPlaceholder": "Escribe tu respuesta o pregunta...",
+    "quickMode": "Modo rápido",
+    "guidedMode": "Modo guiado",
+    "buildNow": "construir ahora",
+    "summaryTitle": "Resumen previo",
+    "editSection": "Editar sección",
+    "addSection": "Agregar sección",
+    "removeSection": "Quitar sección",
+    "continue": "Continuar"
+  }
+}

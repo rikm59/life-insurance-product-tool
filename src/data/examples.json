@@ -1,0 +1,64 @@
+{
+  "iulExample": {
+    "productType": "iul",
+    "config": {
+      "productType": "iul",
+      "iul": {
+        "chassis": "protection focused",
+        "caps": "10%",
+        "floors": "0%",
+        "parRates": "100%",
+        "creditingMethod": "Annual point-to-point S&P 500",
+        "fixedAllocation": "20%",
+        "bonuses": "0.75% persistence bonus years 11+",
+        "multipliers": "No multiplier",
+        "loanType": "Indexed loan",
+        "overloanProtection": true,
+        "limitedPay": "20-pay"
+      },
+      "livingBenefits": "optionalRider"
+    }
+  },
+  "wholeLifeExample": {
+    "productType": "wholeLife",
+    "config": {
+      "productType": "wholeLife",
+      "wholeLife": {
+        "participating": true,
+        "dividendOption": "PUA",
+        "baseToPuaBlend": "40 / 60",
+        "limitedPay": "10-pay",
+        "loanType": "Fixed loan"
+      },
+      "livingBenefits": "optionalRider"
+    }
+  },
+  "termExample": {
+    "productType": "term",
+    "config": {
+      "productType": "term",
+      "term": {
+        "length": 20,
+        "art": false,
+        "rop": false,
+        "conversion": "To any permanent product through year 20"
+      },
+      "livingBenefits": "builtIn"
+    }
+  },
+  "auditSample": {
+    "name": "Sample IUL Illustration",
+    "type": "application/pdf",
+    "parsedFields": {
+      "issueAge": 47,
+      "faceAmountUsd": 500000,
+      "annualPremiumUsd": 8000,
+      "guidelinePremiumUsd": 10000,
+      "plannedPremiumToGuideline": 0.8,
+      "coiTrend": "rising after age 70",
+      "surrenderSchedule": "10-year declining",
+      "loansPlanned": true,
+      "riders": ["Chronic illness", "Critical illness"]
+    }
+  }
+}

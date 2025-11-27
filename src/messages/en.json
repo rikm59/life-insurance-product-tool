@@ -1,0 +1,30 @@
+{
+  "Home": {
+    "title": "Life Insurance Product Tool Builder",
+    "subtitle": "Design, compare, and audit life insurance product tools.",
+    "cta": "Start the Builder"
+  },
+  "Nav": {
+    "home": "Home",
+    "builder": "Builder",
+    "compare": "Compare",
+    "audit": "Audit",
+    "docs": "Docs",
+    "settings": "Settings"
+  },
+  "Builder": {
+    "headline": "Conversational Product Tool Builder",
+    "startLanguage": "Let’s start with language.",
+    "languagePrompt": "Pick a language to work in.",
+    "productPrompt": "Now pick the type of insurance.",
+    "inputPlaceholder": "Type your answer or question...",
+    "quickMode": "Quick mode",
+    "guidedMode": "Guided mode",
+    "buildNow": "build now",
+    "summaryTitle": "Summary preview",
+    "editSection": "Edit section",
+    "addSection": "Add section",
+    "removeSection": "Remove section",
+    "continue": "Continue"
+  }
+}
