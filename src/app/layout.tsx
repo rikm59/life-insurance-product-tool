@@ -37,7 +37,8 @@ export default async function RootLayout({
   return (
     <html lang={locale} className="h-full">
       <body className="min-h-screen bg-slate-950 text-slate-50">
-        <Providers locale={config.locale} messages={config.messages}>
+   <Providers locale={config.locale} messages={config.messages ?? {}}>
+     
           <div className="flex min-h-screen flex-col">
             <header className="border-b border-slate-800 bg-slate-900">
               <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
