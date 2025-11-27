@@ -4,21 +4,19 @@ import {getRequestConfig} from 'next-intl/server';
 import requestConfig from '@/i18n/request';
 import {Providers} from '@/components/Providers';
 import {routing} from '@/i18n/routing';
-import {notFound} from 'next/navigation';
 
 export const metadata = {
   title: 'Life Insurance Product Tool Builder',
   description: 'Conversational tool builder for life insurance products.'
 };
 
-/**
- * Generates static params for each locale to enable static pre-rendering of
- * localized routes. If you prefer not to have locale segments, remove this
- * function and adjust routing accordingly.
+/*
+ * We intentionally omit generateStaticParams here to avoid pre-rendering only
+ * locale-segmented routes. Without this function, Next.js will serve the root
+ * path (/) and any locale-prefixed paths (e.g., /en, /es) at runtime. The
+ * `RootLayout` below handles optional locale detection and falls back to the
+ * default locale when none is provided or when an unsupported locale is used.
  */
-export async function generateStaticParams() {
-  return routing.locales.map(locale => ({locale}));
-}
 
 /**
  * Root layout for the application. The locale is optional; if none is provided,
